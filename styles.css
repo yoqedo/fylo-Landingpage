@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bodytextfont);
+}
+
+/** Variables **/
+:root {
+    --verydarkblue: hsl(243, 87%, 12%);
+    --desaturatedblue: hsl(238, 22%, 44%);
+    --brightblue: hsl(224, 93%, 58%);
+    --lightbrightblue: hsl(224, 98%, 67%);
+    --moderatecyan: hsl(170, 50%, 60%);
+    --lightmoderatecyan: hsl(170, 45%, 43%);
+    --lightgrayishblue: hsl(240, 75%, 98%);
+    --lightgray: hsl(0, 0%, 75%);
+    --headingtextfont: 'Raleway', sans-serif;
+    --bodytextfont: 'Open Sans', sans-serif;
+
+}
+
+/** General Settings**/
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--headingtextfont);
+}
+
+p,
+a {
+    font-family: var(--bodytextfont);
+
+}
+
+p {
+    padding: 20px 0px;
+    font-weight: 400;
+}
+
+li {
+    cursor: pointer;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.right img {
+    width: 100%;
+}
+
+section {
+    background-color: var(--lightgrayishblue);
+    width: 100%;
+    padding: 60px 0px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--brightblue);
+    color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--lightbrightblue);
+}
+
+li:hover {
+    color: var(--lightbrightblue);
+}
+
+ion-icon:hover {
+    color: var(--lightbrightblue);
+}
+
+.menu a:hover {
+    color: rgb(102, 102, 102);
+}
+
+.linktoworks p:hover {
+    color: var(--lightmoderatecyan);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/***************************************/
+
+/** Header Settings**/
+header {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    padding-left: 30px;
+    font-weight: 400;
+    color: black;
+}
+
+
+/** Main Settings **/
+.inner-main {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.inner-main .left input {
+    border: black solid 1px;
+    padding: 9px 20px;
+    width: 50%;
+}
+
+.topcurve {
+    width: 100%;
+    height: 150px;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/**Advertisment Settings**/
+.inner-advertisment {
+    display: flex;
+    align-items: center;
+}
+
+.linktoworks {
+    display: flex;
+    align-items: center;
+    color: var(--moderatecyan);
+    cursor: pointer;
+}
+
+.linktoworks p {
+    padding-right: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 60%;
+}
+
+.card p {
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+
+.card .user {
+    display: flex;
+    align-items: center;
+}
+
+.card .user img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card .user .desc {
+    font-size: 0.8rem;
+    color: var(--lightgray);
+}
+
+
+/** Illustration Settings **/
+
+
+/** Callto Action Settings **/
+.calltoaction {
+    background-color: var(--desaturatedblue);
+}
+
+.inner-calltoaction {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.inner-calltoaction .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+}
+
+.inner-calltoaction .right input {
+    width: 80%;
+    padding: 9px 20px;
+    margin-bottom: 10px;
+}
+
+.inner-calltoaction .right button {
+    width: 40%;
+}
+
+/** Footer Settings **/
+footer {
+    width: 100%;
+    background-color: var(--verydarkblue);
+    color: white;
+    padding: 60px 0px;
+}
+
+footer .inner-footer .box .footerlogo {
+    margin-bottom: 30px;
+}
+
+footer .inner-footer .box ul li {
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+footer .inner-footer .red {
+    padding-bottom: 20px;
+}
+
+footer .inner-footer .blue {
+    display: flex;
+}
+
+footer .inner-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .inner-footer .box {
+    flex: 1;
+}
+
+footer .inner-footer .box1,
+footer .inner-footer .box2,
+footer .inner-footer .box3 {
+    display: flex;
+    justify-content: center;
+}
+
+footer .phone {
+    margin-bottom: 20px;
+}
+
+footer .phone,
+footer .email {
+    display: flex;
+    align-items: center;
+}
+
+footer .phone img,
+footer .email img {
+    padding-right: 10px;
+}
+
+ion-icon {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/** Attribution Settings **/
+.attribution p {
+    text-align: center;
+}
+
+
+/** Media Queries Settings **/
+/** Mobile Settings**/
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    .inner-header img {
+        width: 100px;
+    }
+
+    .menu a {
+        padding-left: 10px;
+        font-size: 0.9rem;
+    }
+
+    .right img {
+        margin-top: 50px;
+    }
+
+    .inner-main {
+        flex-direction: column-reverse;
+    }
+
+    .inner-main .left {
+        text-align: center;
+    }
+
+    .inner-main .left h1 {
+        font-size: 1.6rem;
+        padding-top: 20px;
+    }
+
+    .loginsection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-main .left input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .loginsection button {
+        width: 80%;
+    }
+
+    .topcurve {
+        background-image: url(./images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50px;
+        margin-top: 60px;
+    }
+
+    .inner-advertisment {
+        flex-direction: column-reverse;
+    }
+
+    .inner-advertisment .left h1 {
+        font-size: 1.6rem;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .inner-advertisment p {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card p {
+        text-align: left;
+    }
+
+    .linktoworks {
+        justify-content: center;
+    }
+
+    .inner-calltoaction {
+        flex-direction: column;
+    }
+
+    .inner-calltoaction .left h1 {
+        font-size: 1.6rem;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .inner-calltoaction p {
+        text-align: center;
+    }
+
+    .inner-calltoaction .right {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .inner-calltoaction .right button,
+    .inner-calltoaction .right input {
+        width: 100%;
+    }
+
+    footer {
+        padding: 30px 0px;
+    }
+
+    footer .inner-footer .blue {
+        flex-direction: column;
+    }
+
+    footer .inner-footer .box1,
+    footer .inner-footer .box2 {
+        padding-top: 30px;
+        justify-content: flex-start;
+    }
+
+    footer .inner-footer .box3 {
+        justify-content: center;
+    }
+
+
+}
